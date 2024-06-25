@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="start.css">
+
+<link rel="icon" type="image/png" href="../Images/Card/logo.png">
+<title>ב-ל-א-ג-ן</title>
+</head>
+
+
+<header>
+  <img src="../Images/Card/BALAGANAV.png" alt="תמונת ראש העמוד" class="header-image">
+</header>
+
+<body>
+
+  <audio id="start_audio" controls autoplay style="display: none;">
+    <source src="../Images/Video/rio.mp3" type="audio/mpeg">
+  </audio>
+  
+
+  <button class="instructions" id="openWindowButton"><img src="../Images/Card/book.png" alt="Instructions"></button>
+
+  <button id="start-button" style="width:auto;"><img src="../Images/Card/playred.png" alt="start"></button>
+  
+  <div id="id01" class="modal">
+    <form class="modal-content animate" action="play.html" method="post">  
+      <div class="imgcontainer">
+        <!-- <span id="close-modal" class="close" title="Close Modal">&times;</span>   -->
+      </div>
+  
+      <div class="container" id="inputs">
+        <label for="uname"><b>הקש את שם השחקן</b></label>
+        <input type="text" placeholder="שם" name="uname" required>
+  
+        <button id="1" class="level">Level 1</button> 
+        <button id="2" class="level">Level 2</button> 
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button id="cancel-button" type="button" class="cancelbtn">ביטול</button>  
+      </div>
+    </form>
+  </div>
+
+<script src="start.js"> </script>
+
+
+</body>
+</html>

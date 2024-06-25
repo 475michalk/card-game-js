@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="play.css">
+  <link rel="icon" type="image/png" href="../Images/Card/logo.png">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <title>ב-ל-א-ג-ן</title>
+</head>
+
+<header>
+  <img src="../Images/Card/BALAGANAV.png" alt="תמונת ראש העמוד" class="header-image">
+</header>
+
+<body>
+  <div class="background-image"></div>
+  <div class="capsule-container">
+    <div class="capsule">
+      <div id="animatedDiv" class="fill"></div>
+    </div>
+  </div>
+  <div id="popup" class="hidden">
+    <div id="popup-content">
+
+      <p id="popup-message">זו הודעה חשובה!</p>
+      <div class="img_oops">
+        <button id="popup-restart">
+          <img src="../Images/Card/back1.png" alt="back play">
+        </button>
+
+      </div>
+
+
+    </div>
+  </div>
+  <div id="gameOverPopup" class="hidden">
+    <!-- <div class="end-game-animation">
+      Congratulations! Game Over!
+    </div> -->
+    <p id="gameOverMessage">זו הודעה חשובה!</p>
+    <button  id="l1" class="level" >Level 1</button> 
+    <button id="l2" class="level">Level 2</button> 
+    <button  id="BackToHome">Back to Home</button>
+    <!-- <img src="../Images/Card/end.png" alt=""> -->
+  </div>
+
+  <div class="container">
+    <!-- <div id="rectangle"></div> -->
+    <span id="countdown"></span>
+
+    <div id="game-container">
+      <div id="image-container">
+        <a href="#" id="image-link">
+          <img src="" id="game-image" alt="קלף">
+        </a>
+      </div>
+
+      <div id="objects-container">
+        <img class="frame option-image" src="../Images/Card/רוח רפאים.png" data-object="5" alt="רוח רפאים">
+        <img class="frame option-image" src="../Images/Card/עכבר.png" data-object="4" alt="עכבר">
+        <img class="frame option-image" src="../Images/Card/ספר.png" data-object="3" alt="ספר">
+        <img class="frame option-image" src="../Images/Card/בקבוק.png" data-object="2" alt="בקבוק">
+        <img class="frame option-image" src="../Images/Card/ספא.png" data-object="1" alt="ספה">
+      </div>
+
+
+    </div>
+    <audio id="successAudio" src="../Images/Video/succssed.WAV" preload="auto"></audio>
+    <audio id="failureAudio" src="../Images/Video/wrong.WAV" preload="auto"></audio>
+    <script src="play.js"></script>
+</body>
+
+</html>

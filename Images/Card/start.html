@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/Player-js/Page/start.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./start_files/start.css">
+<script src="chrome-extension://bcappnbhlaicekdeeolchjbpadlajjeb/content/content_main.js"></script></head>
+
+<body><header> 
+  <img src="./start_files/BALAGANAV.png" alt="תמונת ראש העמוד" class="header-image">
+</header>
+
+
+  <button class="start" onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;">  <img src="./start_files/playred.png" alt="start"></button>
+  <button class="instructions" id="openWindowButton"><img src="./start_files/book.png" alt="Instructions"></button>
+<div id="id01" class="modal" style="display: none;">
+  
+  <form class="modal-content animate" action="http://127.0.0.1:5500/Player-js/Page/play.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" class="close" title="Close Modal">×</span>
+    
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>הקש את שם השחקן</b></label>
+      <input type="text" class="btn1" placeholder="שם" name="uname" required="">
+
+      <label for="psw"><b>גיל השחקן</b><br></label>
+      <input type="number" min="1" class="btn1" placeholder="גיל" name="psw" required="">
+        
+      <a href="http://127.0.0.1:5500/Player-js/Page/Home.html"><button type="submit" class="btn1"> התחל משחק </button></a>
+      <label>
+      
+    </label></div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" class="cancelbtn">ביטול</button>
+      
+    </div>
+  </form>
+</div>
+<script src="./start_files/start.js.הורדה"></script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+ </script> 
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

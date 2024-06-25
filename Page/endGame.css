@@ -1,0 +1,170 @@
+
+
+body{
+
+  overflow: hidden;
+
+}
+
+/* Your CSS styles for the game-over container */
+.game-over-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image:url("../Images/Card/endGameBack.png") ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url("../Images/Card/cardg.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.9;
+    z-index: -1;
+  }
+  
+ 
+  #BackToHome {
+    background-color: transparent;
+    border: none;
+    height: 26%;
+    position: fixed;
+      right: -10% ; 
+    bottom: 73%; 
+  }
+
+  #BackToHome img{
+    width: 26%;
+  }
+
+  #h2{
+    height: 60%;
+  }
+
+ 
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(230, 173, 177);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    border:solid black;
+    /* color: white(224, 238, 32); */
+  }
+
+  .circle-container .circle{
+    color: black;
+    background-color: rgb(240, 86, 86);
+  }
+  
+    #l1{
+    background-color: transparent;
+    border: none;
+    height: 15%;
+    width: 15%;
+    position: fixed;
+      right: -2% ; 
+    bottom: 60%; 
+   }
+    #l2{
+    background-color: transparent;
+    border: none;
+    height: 15%;
+    width: 15%;
+    position: fixed;
+      right: -2% ; 
+    bottom: 40%; 
+   }
+
+   #Score{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: ink free;
+    
+   }
+   /* @media (max-width: 900px) {
+    .game-over-container {
+      background-size: 50%;
+      font-size: smaller;
+    } */
+
+    
+
+    /* -responsivi- */
+
+@media (max-width: 900px) {
+  #l2 {
+    right: 2%;
+    bottom: 40%;
+  }
+  
+  #l1 {
+    right: 2%;
+    bottom: 60%;
+  }
+
+  #BackToHome {
+    right: -23%;
+    bottom: 79%;
+    width: 66%;
+  }
+
+  #Score {
+    font-size: 30px;
+  }
+
+  #Finish {
+    font-size: 18px;
+    padding: 8px;
+  }
+  
+#h2 img {
+  height: 65%;
+  font-size: 24px;
+  position: fixed;
+  right: 10%;
+  top: 30%;
+}
+}
+
+
+@media (max-width: 600px) {
+  #l2 {
+    right: 5%;
+    bottom: 40%;
+    width: 89%;
+  }
+  
+  #l1 {
+    right: 5%;
+    bottom: 60%;
+    width: 89%;
+  }
+  
+  #BackToHome {
+    right: -9%;
+    bottom: 79%;
+    width: 121%;
+  }
+
+  #BackToHome img {
+
+    width: 26%;
+  }
+  
+  #h2 img {
+    height: 30%;
+    position: fixed;
+    top: 62%;
+    right: 20%;
+  }
+}
